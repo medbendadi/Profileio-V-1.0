@@ -1,0 +1,179 @@
+:root {
+  --mainFont: "El Messiri", sans-serif;
+  --buttonFont: "Genos", sans-serif;
+  --titleFont: "Cairo", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+.container {
+  width: 80%;
+  padding: 20px;
+}
+.container h2 {
+  width: 100%;
+  color: #fdeb37;
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+.container .row100 {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.container .row100 .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+  transition: 0.5s;
+}
+.container .row100 .col .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #fdeb37;
+  font-family: var(--mainFont);
+  transition: 0.5s;
+}
+.container .row100 .col .inputBox .input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+}
+.container .row100 .col .inputBox .input .tex {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.container .row100 .col .inputBox .input:focus + .tex,
+.container .row100 .col .inputBox .input:valid + .tex {
+  top: -35px;
+  left: -10px;
+  z-index: -1;
+  color: #fdeb37;
+}
+.container .row100 .col .inputBox .lin {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #616161;
+  transition: 0.75s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+.container .row100 .col .inputBox .input:focus ~ .lin,
+.container .row100 .col .inputBox .input:valid ~ .lin {
+  height: 100%;
+}
+.container .row100 .col .inputBox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+.container .row100 .col .inputBox .textarea {
+  height: 100%;
+  resize: none;
+  /* min-height: 150px; */
+}
+.container .row100 .col .inputBox .textarea:focus + .tex,
+.container .row100 .col .inputBox .textarea:valid + .tex {
+  top: -35px;
+  left: -10px;
+}
+.container .row100 .col .inputBox .textarea:focus ~ .lin,
+.container .row100 .col .inputBox .textarea:valid ~ .lin {
+  height: 100%;
+}
+input[type="submit"] {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #fdeb37;
+  color: #000;
+  font-size: 20px;
+  border-radius: 2px;
+  font-family: var(--buttonFont);
+  font-weight: bold;
+  transition: 0.5s;
+}
+input[type="submit"]:hover {
+  background-color: #783937ff;
+  color: black;
+}
+.container .row100 .col .inputBox .textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #000;
+}
+
+.container .row100 .col .tex {
+  position: relative;
+}
+.container .row100 .col .tex:hover {
+  top: -35px;
+  left: -10px;
+}
+::selection {
+  background-color: #161922;
+  color: #fdeb37;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3a3a3a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a09522;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  transition: 0.15s;
+}
