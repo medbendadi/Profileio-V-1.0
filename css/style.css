@@ -174,7 +174,7 @@ nav ul li a:hover {
   letter-spacing: 1px;
   margin-bottom: 45px;
 }
-button {
+.but-cnt {
   background-color: #fdeb37;
   color: black;
   border: 2px solid transparent;
@@ -186,7 +186,8 @@ button {
   position: absolute;
   left: 379px;
 }
-button:hover {
+
+.but-cnt:hover {
   transform: scale(1.2);
   background-color: transparent;
   border: 2px solid #ffcc74;
@@ -194,6 +195,7 @@ button:hover {
   transition: 0.7s;
   cursor: pointer;
 }
+
 
 .line-mid1 {
   border-left: 8px solid #fdeb37c2;
