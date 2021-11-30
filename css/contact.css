@@ -127,15 +127,16 @@ body {
   font-size: 18px;
   padding: 0 10px;
   display: block;
-  transition: 0.5s;
+  transition: 0.4s;
   pointer-events: none;
 }
 .container .row100 .col .inputBox .input:focus + .tex,
 .container .row100 .col .inputBox .input:valid + .tex {
   top: -35px;
   left: -10px;
-  z-index: -1;
+  z-index: 0;
   color: #fdeb37;
+  transition: 0.4s;
 }
 .container .row100 .col .inputBox .lin {
   position: absolute;
@@ -205,10 +206,12 @@ input[type="submit"]:hover {
 
 .container .row100 .col .tex {
   position: relative;
+  transition: 0.5s;
 }
 .container .row100 .col .tex:hover {
   top: -35px;
   left: -10px;
+  transition: 0.5s;
 }
 
 /* selection  */
