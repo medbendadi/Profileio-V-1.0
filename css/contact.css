@@ -216,8 +216,8 @@ input[type="submit"]:hover {
 
 /* selection  */
 ::selection {
-  background-color: #161922;
-  color: #fdeb37;
+  background-color: #2b2e36;
+  color: #ffdda1;
 }
 
 /* width */
